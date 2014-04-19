@@ -1,0 +1,9 @@
+[Bb]in
+[Oo]bj
+PublishScripts
+*.suo
+*.user
+*.pubxml
+*.pubxml.user
+
+packages

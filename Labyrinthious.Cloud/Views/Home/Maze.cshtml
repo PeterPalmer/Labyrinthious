@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Labyrinthious.MazeGeneration.Vector>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div align="center">
+    <svg height="500" width="500" style="stroke:rgb(130,147,164);stroke-width:2">
+        @foreach (var vector in Model)
+        {
+            <line x1="@vector.StartX" y1="@vector.StartY" x2="@vector.EndX" y2="@vector.EndY" />
+        }
+    </svg>
+</div>

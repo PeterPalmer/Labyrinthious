@@ -1,0 +1,99 @@
+﻿body {
+	background: #ABC;
+	color: #346;
+	font-family: verdana, sans-serif;
+	font-size: 14px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+input,
+select,
+textarea {
+	max-width: 280px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.whiteFat {
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	color: white;
+	-webkit-text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-weight: 900;
+}
+
+H1 {
+	font-size: 55px;
+	letter-spacing: -6.5px;
+	margin: 0 0 20px;
+	font-weight: 900;
+}
+
+#qrCode {
+	background: white;
+	border-radius: 40px;
+	height: 250px;
+	padding: 20px;
+	width: 250px;
+	box-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#canvas, #maze {
+	display: none;
+}
+
+#canvas {
+	position: absolute;
+	top: -7px;
+	left: -7px;
+}
+
+#maze {
+	height: 500px;
+	position: relative;
+	width: 500px;
+}
+
+svg {
+	background: white;
+}
+
+#infoText {
+	font-size: 18px;
+}
+
+#githubLink {
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+}
+
+#phoneText {
+	font-size: 18px;
+	margin-top: 100px;
+}
+
+@media all and (max-height: 500px) {
+	#githubLink {
+		display: none;
+	}
+}
+
+@media screen and (orientation:landscape) {
+	#phoneText {
+		margin-top: 50px;
+	}
+}
