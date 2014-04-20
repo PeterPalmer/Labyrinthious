@@ -163,9 +163,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\CollisionDetection.ts" />
     <TypeScriptCompile Include="Scripts\Labyrinthious.ts" />
     <TypeScriptCompile Include="Scripts\MobilePage.ts" />
-    <Content Include="Scripts\Labyrinthious.js" >
+    <Content Include="Scripts\CollisionDetection.js" >
+      <DependentUpon>CollisionDetection.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Labyrinthious.js">
       <DependentUpon>Labyrinthious.ts</DependentUpon>
     </Content>
     <Content Include="Scripts\MobilePage.js">
@@ -183,6 +187,9 @@
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\Labyrinthious %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Labyrinthious.pubxml" />
+    <Content Include="Scripts\CollisionDetection.js.map">
+      <DependentUpon>CollisionDetection.ts</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
